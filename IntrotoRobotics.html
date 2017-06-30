@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body onload="myFunction()">
+
+<script>
+function myFunction() {
+    var txt;
+    var person = prompt("Please enter your name:", "Justin Bieber");
+    if (person == null || person == "") {
+        txt = "User cancelled the prompt.";
+    } else {
+        txt = "Hello " + person + "! Welcome to my page!";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
 
 <h1 style="color:blue; font-size: 500%;
 border: 15px solid powderblue; margin: 60px; text-align:center;">Reflections </h1>
